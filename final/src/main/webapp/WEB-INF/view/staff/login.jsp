@@ -38,32 +38,36 @@
 <title>로그인창</title>
 <script type="text/javascript">
 
-function bgLabel(ob, id) {
-	    if(!ob.value) {
-		    document.getElementById(id).style.display="";
-	    } else {
-		    document.getElementById(id).style.display="none";
-	    }
-}
-
-function sendLogin() {
-        var f = document.loginForm;
-
-    	var str = f.userId.value;
-        if(!str) {
-            f.userId.focus();
-            return false;
-        }
-
-        str = f.userPwd.value;
-        if(!str) {
-            f.userPwd.focus();
-            return false;
-        }
-
-        f.action = "<%=cp%>/member/login";
-        f.submit();
-}
+	function bgLabel(ob, id) {
+		    if(!ob.value) {
+			    document.getElementById(id).style.display="";
+		    } else {
+			    document.getElementById(id).style.display="none";
+		    }
+	}
+	
+	function sendLogin()
+	{
+	        var f = document.loginForm;
+	
+	    	var str = f.s_num.value;
+	        if(!str)
+	        {
+	            f.s_num.focus();
+	            
+	            return false;
+	        }
+	
+	        str = f.password.value;
+	        if(!str)
+	        {
+	            f.password.focus();
+	            return false;
+	        }
+	
+	        f.action = "<%=cp%>/staff/login";
+	        f.submit();
+	}
 </script>
        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <meta charset="utf-8">
@@ -96,11 +100,11 @@ function sendLogin() {
                             <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                 <div class="text-left">
                                     <label class="text-muted">ID</label>
-                                    <input id="userId" name="userId" type="text" placeholder="사원번호를 입력해주세요" class="form-control" required />
+                                    <input id="s_num" name="s_num" type="text" placeholder="사원번호를 입력해주세요" class="form-control" required />
                                 </div>
                                 <div class="text-left">
                                     <label for="signupInputPassword" class="text-muted">Password</label>
-                                    <input id="userPwd" name="userPwd" type="password" placeholder="패스워드를 입력해주세요" class="form-control lock-input" required />
+                                    <input id="password" name="password" type="password" placeholder="패스워드를 입력해주세요" class="form-control lock-input" required />
                                 </div>
                                 <div class="pull-left pad-btm">
                                     <label class="form-checkbox form-icon form-text">

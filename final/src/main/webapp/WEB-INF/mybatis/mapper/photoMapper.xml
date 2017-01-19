@@ -8,18 +8,14 @@
 	</insert>
 	
 	
-	<select id="listPhoto" parameterType="map" resultType="com.sp.bbs.Board">
+	<select id="listPhoto" parameterType="map" resultType="com.sp.photo.Photo">
 		select*from (
 			SELECT ROWNUM rnum, tb.*FROM(
 				select num, name,
 				to_char(created, 'YYYY-MM-DD') created,
 				subject, hitCount
 				FROM photoBoard
-				<where>
-					<if test="searchValue != null and searchValue != ''">
-						<include refid="where-list"/>
-					</if>
-				</where>
+				
 				ORDER BY num ASC
 		<![CDATA[
 			) TB WHERE ROWNUM <= #{end}
