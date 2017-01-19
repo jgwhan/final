@@ -51,8 +51,10 @@
     <tiles:insertAttribute name="header"/>
 </div>
 
-<div class="container" role="main">
-    <tiles:insertAttribute name="body"/>
+<div class="boxed">
+	<div id="page-content">
+    	<tiles:insertAttribute name="body"/>
+    </div>
 </div>
 
 <div>

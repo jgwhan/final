@@ -6,5 +6,4 @@
    String cp=request.getContextPath();
 %>
 
-
-여기는 달력
+포토갤러리 입니다.

@@ -51,21 +51,28 @@
     <tiles:insertAttribute name="header"/>
 </div>
 
-<div class="container" role="main">
-    <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" style="max-width: 240px;" id="sidebar">
+<div class="boxed">
+   <!--  <div class="row row-offcanvas row-offcanvas-right"> -->
+       
+        <!-- <div class="col-xs-6 col-sm-3 sidebar-offcanvas" style="max-width: 240px;" id="sidebar"> -->
             <tiles:insertAttribute name="left"/>
-        </div>
-        <div class="col-xs-12 col-sm-9 body-frame-2">
-                <tiles:insertAttribute name="body"/>
-        </div>
-     </div>
+        <!-- </div>
+         -->
+        <!-- <div class="col-xs-12 col-sm-9 body-frame-2"> -->
+        <section id="content-container">
+           <div id="page-content">
+           		<tiles:insertAttribute name="body"/>
+           </div>
+        </section>
+        <!-- </div> -->
+        
+</div>
 </div>
 
 <div>
     <tiles:insertAttribute name="footer"/>
 </div>
-</div>
+
 
 <!--JAVASCRIPT-->
 <!--jQuery [ REQUIRED ]-->
