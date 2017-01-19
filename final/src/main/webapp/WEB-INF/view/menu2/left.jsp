@@ -43,7 +43,7 @@ $(function(){
                               </a>
                               <ul class="collapse">
                                   <li><a href="<%=cp%>/bbs/list"><i class="fa fa-caret-right"></i> 자유 게시판</a></li>
-                                  <li><a href="<%=cp%>/"><i class="fa fa-caret-right"></i> 자유 갤러리</a></li>
+                                  <li><a href="<%=cp%>/photo/list"><i class="fa fa-caret-right"></i> 자유 갤러리</a></li>
                               </ul>
                           </li>
                             <li class="list-divider"></li>

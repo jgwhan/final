@@ -28,9 +28,9 @@
                 <!--End Navigation toogle button-->
                 
                 <!--Profile toogle button-->
-                   <li id="profilebtn" class="hidden-xs">
+                  <!--  <li id="profilebtn" class="hidden-xs">
                       <a href="JavaScript:void(0);"> <i class="fa fa-user fa-lg"></i> </a>
-                   </li>
+                   </li> -->
                 <!--End Profile toogle button-->
 
                 <!--Messages Dropdown-->
