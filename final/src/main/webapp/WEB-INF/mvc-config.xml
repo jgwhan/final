@@ -8,7 +8,7 @@
 
     <!-- Uncomment and your base-package here:
          <context:component-scan
-            base-package="org.springframework.samples.web"/>  -->
+            base-package="org.springframework.samples.web"/> .... -->
 
 
     <mvc:annotation-driven />
