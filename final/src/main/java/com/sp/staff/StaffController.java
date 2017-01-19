@@ -18,7 +18,7 @@ public class StaffController {
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public ModelAndView loginForm() throws Exception
 	{
-		return new ModelAndView(".staff.login");
+		return new ModelAndView(".staff.login");//
 	}
 	
 	@RequestMapping(value="/staff/login", method=RequestMethod.POST)
