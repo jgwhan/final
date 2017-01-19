@@ -73,8 +73,8 @@
 		<put-attribute name="footer" value="/WEB-INF/view/layout/footer.jsp" />
 	</definition>
 	<!-- 순서가 바뀌면 안됨(* 많은것이 위에) -->
-	<definition name=".member.login" template="/WEB-INF/view/member/login.jsp">
-		<put-attribute name="body" value="/WEB-INF/view/member/login.jsp" />
+	<definition name=".staff.login" template="/WEB-INF/view/staff/login.jsp">
+		<put-attribute name="body" value="/WEB-INF/view/staff/login.jsp" />
 	</definition>
 	<definition name=".*.*.*" extends=".mainLayout">
 		<put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"/>
